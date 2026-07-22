@@ -164,20 +164,22 @@ body {
     text-align: center;
 } */
 /* Make the profile picture look professional */
-.profile-figure img{
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1/1; /* Maintain square aspect ratio */
+.about-content img{
+    height: 100%;
+    max-height: 350px;
+    width: 90%;
+    max-width: 290px;
+    aspect-ratio: 1/2; 
     object-fit: cover; /* Ensure the image covers the area without distortion */
     border-radius: 50%; /* Circular profile picture */
     border: 5px solid var(--primary);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
 }
-.profile-figure img:hover{
+.about-content img:hover{
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
-.profile-figure figcaption{
+.about-content figcaption{
     margin-top: 15px;
     font-style: italic;
     font-weight: 500;
