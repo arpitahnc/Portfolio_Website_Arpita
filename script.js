@@ -57,7 +57,7 @@ window.addEventListener('scroll', () =>{
     })
     navItems.forEach(link =>{
         link.classList.remove('active');
-        if(link.getAttribute('href') === `${current}`) {
+        if(link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     })
@@ -83,7 +83,7 @@ function renderProjects(filter="all") {
         <div class="project-card-body">
         <h3>${project.name}</h3>
         <div class="project-tags">
-        ${project.tech.map(t => <span class="tag">${t}</span>).join('')}
+        ${project.tech.map(t => `<span class="tag">${t}</span>`).join('')}
         </div>
         <a href="#" class=" btn btn-primary">View Project</a>
         </div>
